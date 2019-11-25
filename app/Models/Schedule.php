@@ -49,6 +49,6 @@ class Schedule extends Model
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function course() {
-        return $this->lectureTime(Course::class);
+        return $this->belongsTo(Course::class);
     }
 }
