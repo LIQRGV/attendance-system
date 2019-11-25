@@ -47,6 +47,6 @@ class Attendance extends Model
 
     public function subjects()
     {
-        return $this->morphTo(null, null, null);
+        return $this->morphTo();
     }
 }

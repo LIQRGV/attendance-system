@@ -49,7 +49,7 @@ class Course extends Model
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function schedules() {
-        // someone wondering why this one resulting this kind of query "`schedules`.`course_id` is not null"
+        // if someone wondering why this one resulting this kind of query "`schedules`.`course_id` is not null"
         // read this https://laracasts.com/discuss/channels/eloquent/why-laravel-add-an-extra-where-condition-foreign-key-is-not-null-to-hasonemany-relation
         return $this->hasMany(Schedule::class);
     }
